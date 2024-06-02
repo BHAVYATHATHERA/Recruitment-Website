@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Oleo+Script&family=Sofia&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Mate+SC&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lemon&family=Sofia&display=swap" rel="stylesheet">
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Recruitment Portal</title>
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            background-color:white;
+            background-size:cover;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            height: 50px;
+            text-align: right;
+            background-color:royalblue;
+            margin: 20px;
+            padding: 35px;
+        }
+        nav a{
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+        }
+        #box{
+            float:left;
+            margin: 15px;
+            width: 160px;
+            height: 140px;
+            background-color:black;
+            border-radius: 5px;
+            padding: 0.9em;
+        }
+        #sp{
+            font-family: 'IM Fell French Canon SC', Courier, monospace;
+            color:royalblue;
+            animation: ani 7s infinite 750ms linear reverse;
+            
+        }
+        @keyframes ani{
+            0%{
+                margin-right: 70%;
+                font-size: 40px;
+            }
+            100%{
+                margin-left:40%;
+                font-size: 40px;
+            }
+
+        }
+       .nav2{
+           height: 40px;
+            position:sticky;
+            top: 0;
+            margin: 3px;
+            background-color:hotpink;
+            margin: 5px;
+            border: 4px;
+            padding: 4px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .nav2 a:hover{
+            color: white;
+            margin: 5px;
+            cursor: pointer;
+        } 
+        #nav2{
+           height: 40px;
+            position:sticky;
+            top: 0;
+            margin: 3px;
+            background-color:hotpink;
+            margin: 5px;
+            border: 4px;
+            padding: 4px;
+            font-size: 30px;
+            text-align: center;
+        }
+        #nav2 a:hover{
+            color: white;
+            margin: 5px;
+            cursor: pointer;
+        } 
+        #pic{
+            float: left;
+            margin: 5px;
+            width: 400px;
+            height: 400px;
+            margin-left: 100px;
+            border-radius: 5px;
+            background-color:navy;
+            padding: 1em;
+        }
+        h2{
+            font-family:'Sofia', Times, serif ;
+            padding-top: 10px;
+            padding-left: 700px;
+            font-size: 27px;
+            padding-bottom: 100px;
+        }
+        .distort{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 20vh;
+            background:royalblue;
+        }
+        h1{
+            position:absolute;
+            margin: 0;
+            font-size: 4em;
+            font-weight: 900;
+            color: #fff;
+            z-index: 1;
+            overflow: hidden;
+        }
+        h1:before{
+            content: '';
+            position: absolute;
+            left: 120%;
+            width: 120%;
+            height: 100%;
+            background: linear-gradient(90deg,transparent 0%, royalblue 5%, royalblue 100%);
+            animation: animate 4s infinite linear forwards;
+            animation-delay: 4s;
+        }
+        @keyframes animate{
+            0%{
+                left: 100%;
+            }
+            100%{
+                left: -20%;
+            }
+        }
+        h1 span{
+            color:violet;
+        }
+         video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1600px;
+            position:absolute;
+            height: 1800px;
+            object-fit:10px;
+            z-index: 2;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            padding: 0px;
+        }
+        .forma{
+            text-align: center;
+            font-weight: 900;
+            font-family:'Sacramento', Times, serif;
+            font-size: 45px;
+            align-content: center;
+            color: black;
+            background-image: url(https://cdn.tutsplus.com/vector/uploads/legacy/qt/2011_QT/qt_134_watercolor/10.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60%;
+            padding: 200px;
+        }
+        #pic2{
+            float: left;
+            margin: 5px;
+            width: 500px;
+            height: 500px;
+            margin-left: 50px;
+            border-radius: 5px;
+            background-color:navy;
+            padding: 1em;
+        }
+        #head2{
+            font-family:'Playfair Display SC', Times, serif ;
+            padding-top: 150px;
+            padding-left: 600px;
+            padding-bottom: 250px;
+            font-size: 40px;
+            font-family: 'Cinzel Decorative', Times, serif;
+        }
+        .ford{
+            text-align: center;
+            font-weight: 900;
+            font-family:'Sacramento', Times, serif;
+            font-size: 75px;
+            align-content: center;
+            color:white;
+            background-image: url(https://ak7.picdn.net/shutterstock/videos/27843907/thumb/12.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 150px;
+        }
+        #apply{
+            font-size: 40px;
+            text-align:center;
+            font-weight: bolder;
+            font-family:cursive;
+            color: black;
+            font-family: 'Cinzel Decorative', Times, serif;
+           /* background-image: url(http://25.media.tumblr.com/tumblr_m20gt6sYR01qc0s10o1_500.gif); */
+        }
+        .main{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            min-height: 100vh;
+            background: #091921;
+        }
+        .main .clock{
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            background: url(clock.png);
+            background-size:cover;
+            border: 4px solid #091921;
+            border-radius: 50%;
+            box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05) , inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0,0,0,0.3), inset 0 15px 15px rgba(0,0,0,0.3);
+        }
+        .main .clock:before{
+            content: '';
+            position:absolute;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            z-index: 10000;
+        }
+        .main .clock .hour, .main .clock .min, .main .clock .sec{
+            position: absolute;
+        }
+        .main .clock .hour, .hr{
+            width: 160px;
+            height: 160px;
+        }
+        .main .clock .min, .mn{
+            width: 190px;
+            height: 190px;
+        }
+        .main .clock .sec, .sc{
+            width: 230px;
+            height: 230px;
+        }
+        .hr, .mn, .sc{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .hr:before{
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 80px;
+            background: hotpink;
+            z-index: 10;
+            border-radius: 6px 6px 0 0;
+        }
+        .mn:before{
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 90px;
+            background: #fff;
+            z-index: 11;
+            border-radius: 6px 6px 0 0;
+        }
+        .sc:before{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 150px;
+            background:royalblue;
+            z-index: 12;
+            border-radius: 6px 6px 0 0;
+        }
+        #clockq{
+            font-weight: 500;
+            font-family:'Sacramento', Times, serif;
+            font-size: 70px;
+            padding: 20px;
+            color: white;
+        }
+        #address {
+            width: 25%;
+            height: 40px;
+        }
+         #skills {
+            width: 25%;
+            height: 50px;
+        }
+        fieldset{
+            width: 20%;
+            border: 2px solid black;
+        }
+        input[type="submit"] {
+           background-color:royalblue;
+           color: white;
+           font-size: 20px;
+           padding: 12px 20px;
+           border:none;
+           border-radius: 4px;
+           cursor:pointer;
+           width: 35%;
+       }
+       input[type=submit]:hover{
+           background-color:dodgerblue;
+       }
+       input[type="text"],
+       input[type="email"],
+       input[type="tel"],
+       input[type="number"]
+       input[type="date"],
+       select,textarea {
+           width: 10%;
+           padding: 6px;
+           border: 2px solid black;
+          font-size: 13px;
+           margin: 5px;
+       }
+       form p{
+           font-size: 20px;
+       }
+       form{
+           background-image: url(http://25.media.tumblr.com/tumblr_m20gt6sYR01qc0s10o1_500.gif);
+          background-repeat: no-repeat;
+           background-size: cover; 
+           backdrop-filter: blur(10px);
+       }
+       .calling{
+           background-image: url(https://i.pinimg.com/originals/af/d8/e6/afd8e624d91ae3589e1afd1f4336d0fa.gif);
+           background-repeat: no-repeat;
+           background-size: cover; 
+           padding: 120px;
+            text-align: center;
+            font-size: 80px;
+       }
+       .calling select{
+           width: 50%;
+           height: 60px;
+           border: 5px solid black;
+           border-radius: 10px;
+       }
+       .icons{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+       }
+       .social-menu ul {
+    position:relative;
+    top: -25px;
+    left: 0px;
+    transform: translate(0%, 10%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    align-items: center;
+    padding-left:20px;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.2s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(-0 , -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+    </style>
+</head>
+<body>
+    <img id="box" src="WhatsApp Image 2021-07-04 at 4.33.03 PM.jpeg" alt="">
+    <br>
+    <nav id="nav1">
+        <a href="#">Get Found. Get Paid.</a>
+    </nav>
+   <br>
+   <div id="sp">Welcome_to_Recruiter's_Hub!!</div>
+   
+   <nav id="nav2">
+         <a href="#">Recruiters</a>
+         <a href="companies.html">Companies</a>
+         <a href="#">Services</a>
+    </nav>
+    <br><br>
+    <img id="pic" src="https://image.freepik.com/free-vector/girl-working-laptop-illustration-work-from-home-mascot-cartoon-character-people-isolated_138676-1080.jpg" alt="">
+    <h2>Seek for job without stepping out of your home. <br> <br> Grab flexible job opportunities. <br> <br> Get a premium job search. <br> <br> Hire suitable employees. <br> <br> All at a single place without any charges.</h2>
+    
+<br>
+    <div class="distort">
+        <h1> <span> Rec</span>ruiter's <span> H</span>ub</h2>
+           <video src="orange_stream_line_curve.mov" muted=" " autoplay loop></video> 
+    </div>
+    <div class="forma">
+        <p>Grab the opportunity of working in your Dream Company.</p>
+        <p>Get hired for your skills , abilities and potential.</p>
+    </div>
+
+    <img id="pic2" src="https://static.vecteezy.com/system/resources/previews/000/174/142/original/job-search-illustration-free-vector.jpg" alt="">
+    <h2 id="head2">Recruiter's Hub helps early to mid-career candidates land the right job.</h2>
+
+    <div class="calling">
+        <p>Hey Recruiters!! <br> Find the one you are seeking for. <br> Search by Department. <br>
+        <select name="department" id="department"> 
+            <option value="">Select department</option>
+            <option value="">Accountancy</option>
+            <option value="">Banking</option>
+            <option value="">Finance</option>
+            <option value="">Business</option>
+            <option value="">Teaching</option>
+            <option value="">Consulting</option>
+            <option value="">Management</option>
+            <option value="">Charity</option>
+            <option value="">Voluntary Work</option>
+            <option value="">Creative Arts and Design</option>
+            <option value="">Energy and Utilities</option>
+            <option value="">Engineering :  </option>
+                <option value="">Mechanical Engineer</option>
+                <option value="">Civil Engineer</option>
+                <option value="">Chemical Engineer</option>
+                <option value="">Electrical Engineer</option>
+                <option value="">Electronics Engineer</option>
+                <option value="">Computer Science Engineer</option>
+                <option value="">Aerospace Engineer</option>
+                <option value="">Biomedical Engineer</option>
+                <option value="">Environmental Engineer</option>
+                <option value="">Computer Engineer</option>
+                <option value="">Automobile Engineer</option>
+                <option value="">Matereials Science</option>
+                <option value="">Marine Engineer</option>
+                <option value="">Petroleum Engineer</option>
+                <option value="">Mining Engineer</option>
+                <option value="">Metallurgy Engineer</option>
+                <option value="">Industrial Engineer</option>
+                <option value="">Agricultural Engineer</option>
+                <option value="">Manufacturing Engineer</option>
+                <option value="">Mechatronics Engineer</option>
+                <option value="">Biotechnology Engineer</option>
+                <option value="">Nuclear Engineer</option>
+                <option value="">Structural Engineer</option>
+            <option value="">Manufacturing</option>
+            <option value="">Agriculture</option>
+            <option value="">Healthcare</option>
+            <option value="">Events Management</option>
+            <option value="">Information Technology</option>
+            <option value="">Law</option>
+            <option value="">Law Enforcement and Security</option>
+            <option value="">Sports & Training</option>
+            <option value="">Tourism</option>
+            <option value="">Marketing</option>
+            <option value="">Advertising</option>
+            <option value="">Media</option>
+            <option value="">Construction</option>
+            <option value="">Public Services</option>
+            <option value="">Administration</option>
+            <option value="">Retail</option>
+            <option value="">Sales</option>
+            <option value="">Pharmaceuticals</option>
+        </select>    
+    </p>
+    </div>
+
+    <div class="ford">
+        <p>Choose a job you love , <br> and you will never have to work a day in your life.</p>
+    </div>
+    
+    <div class="social-menu">
+        <ul>
+          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+          <br>
+        </center>
+        </ul>
+      </div>
+    <center>
+    <form action="">
+        <p id="apply">Get your dream job. <br> Apply Now!!</p>
+        <p>Required fields are followed by *</p>
+        <p>First Name : *<input type="text" placeholder="Enter first name" name="first name" required> </p>
+        <p>Last Name : *<input type="text" placeholder="Enter last name" name="last name" required> </p>
+        <fieldset>
+            <legend>Gender</legend>
+           <p>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+           </p>
+        </fieldset>
+        <p>Date of Birth : *<input type="date" name="DOB" id="DOB" placeholder="dd-mm-yyyy" required></p>
+        <p>Contact Number : *<input type="tel" name="contact number" id="number" placeholder="**********" required></p>
+        <p>Personal Email ID : *<input type="email" name="email" id="email" placeholder="Enter your email" required></p>
+        <p>Alternate Contact Number : <input type="tel" name="alternate contact number" id="num" placeholder="**********"></p>
+        <p>Address : * <input type="text" name="address" id="address" required></p>
+        <p>Highest Qualification : <input type="text" name="highest qualification" placeholder="Qualification" id="qualification"></p>
+        <p>University Name : <input type="text" name="University Name" placeholder="Enter university name" id="uniname"></p>
+        <p>Department : *<select name="department" id="department"> 
+            <option value="">Select department</option>
+            <option value="">Accountancy</option>
+            <option value="">Banking</option>
+            <option value="">Finance</option>
+            <option value="">Business</option>
+            <option value="">Teaching</option>
+            <option value="">Consulting</option>
+            <option value="">Management</option>
+            <option value="">Charity</option>
+            <option value="">Voluntary Work</option>
+            <option value="">Creative Arts and Design</option>
+            <option value="">Energy and Utilities</option>
+            <option value="">Engineering :  </option>
+                <option value="">Mechanical Engineer</option>
+                <option value="">Civil Engineer</option>
+                <option value="">Chemical Engineer</option>
+                <option value="">Electrical Engineer</option>
+                <option value="">Electronics Engineer</option>
+                <option value="">Computer Science Engineer</option>
+                <option value="">Aerospace Engineer</option>
+                <option value="">Biomedical Engineer</option>
+                <option value="">Environmental Engineer</option>
+                <option value="">Computer Engineer</option>
+                <option value="">Automobile Engineer</option>
+                <option value="">Matereials Science</option>
+                <option value="">Marine Engineer</option>
+                <option value="">Petroleum Engineer</option>
+                <option value="">Mining Engineer</option>
+                <option value="">Metallurgy Engineer</option>
+                <option value="">Industrial Engineer</option>
+                <option value="">Agricultural Engineer</option>
+                <option value="">Manufacturing Engineer</option>
+                <option value="">Mechatronics Engineer</option>
+                <option value="">Biotechnology Engineer</option>
+                <option value="">Nuclear Engineer</option>
+                <option value="">Structural Engineer</option>
+            <option value="">Manufacturing</option>
+            <option value="">Agriculture</option>
+            <option value="">Healthcare</option>
+            <option value="">Events Management</option>
+            <option value="">Information Technology</option>
+            <option value="">Law</option>
+            <option value="">Law Enforcement and Security</option>
+            <option value="">Sports & Training</option>
+            <option value="">Tourism</option>
+            <option value="">Marketing</option>
+            <option value="">Advertising</option>
+            <option value="">Media</option>
+            <option value="">Construction</option>
+            <option value="">Public Services</option>
+            <option value="">Administration</option>
+            <option value="">Retail</option>
+            <option value="">Sales</option>
+            <option value="">Pharmaceuticals</option>
+        </select>    
+        </p>
+        <p>Total Experience : * <input type="number" name="total experience" id="exp" required></p>
+        <p>Current Company : <input type="text" name="current company" id="comapny"></p>
+        <p>Skills : * <input id="skills" type="text" name="skills" required></p>
+        <input type="submit" value="Submit"> <br><br> <br><br><br>
+    </form>
+</center>
+<div class="main">
+    <p id="clockq">Either you run the day,   <br> or the day runs you. <br>All we have to decide is what to <br> do with the time that is given to us.</p>
+    <div class="clock">
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const deg = 6;
+    const hr = document.querySelector('#hr');
+    const mn = document.querySelector('#mn');
+    const sc = document.querySelector('#sc');
+
+    setInterval(() => {
+        let day = new Date();
+        let hh = day.getHours() * 30;
+        let mm = day.getMinutes()*deg;
+        let ss = day.getSeconds()*deg;
+
+        hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+        mn.style.transform = `rotateZ(${mm}deg)`;
+        sc.style.transform = `rotateZ(${ss}deg)`;
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+.flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+        .flex-item {   
+            width: 30%;
+            margin: 1rem;
+            padding-top: 50px;
+            border: 2px #D4D2D4 solid;
+            box-shadow: 5px 5px 5px #aaaaaa;
+        }
+        .inner-flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .inner-flex-item {
+            padding: 0rem;
+        }
+        .inner-flex-item img{
+            height: 200px;
+            max-width: 100%;
+            max-height: 100%;   
+        }
+        h1 {
+          text-align: centeer;  
+        }
+        p {
+            font-size: 2rem;
+            margin: 2rem;
+        }
+        button {
+            margin: 2rem;
+            font-size: 150%;
+            color: white;
+            background-color:midnightblue;
+            padding: 10px 30px;
+            padding-left: 130px;
+            padding-right: 130px;
+        }
+        button:hover{
+            background-color: royalblue;
+        }
+        #h1{
+            padding-left: 40%;
+            position:fixed;
+            align-items: center;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Companies</h1> <br><br><br><br><br><br><br><br><br><br>
+    <div class="flex-container">
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.RBNRpjtNil9xPJ2I6fZ7OwHaH2&pid=Api&P=0&w=300&h=300" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Cognizant</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                                Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://media.glassdoor.com/sqll/29396/virtusa-squarelogo-1565584355543.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Virtusa</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.01YjtHSa3kQUxcUx2H0DAgHaHu&pid=Api&P=0&w=300&h=300" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>jio</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/bc446d4f68e46da84af03344401f5204" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Tech Mahindra</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.W7qNd68WkrGUc1CbaVybBQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>LTI</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.X4ToybFmmdhUhpxZRzJNrQHaEK&pid=Api&P=0&w=297&h=168" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Incedo</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.F2PRnguK4wGjNYgjCjGT3AHaHa&pid=Api&P=0&w=300&h=300" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Xoriant</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                                Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.eGcI1YmKF-y9JHLj6goWhwHaD4&pid=Api&P=0&w=361&h=190" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Accolite Digital</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://www.xda-developers.com/files/2018/03/Logo-Oracle.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Oracle</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="http://www.newenglandmetalservices.com/wp-content/uploads/2015/11/Applied-Materials.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Applied Materials</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.L_2jAx8aLdOf_RAXeviZHAHaEK&pid=Api&P=0&w=318&h=179" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Opentext</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.SjK7Mty5u_Kfyx_Z9UYGtgHaIS&pid=Api&P=0&w=300&h=300" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Airtel</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://image3.mouthshut.com/images/imagesp/925100634s.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Technosoft Corporation</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                                Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://tse4.explicit.bing.net/th?id=OIP.dUcfdpXwe_baCxkArZyOZAHaD4&pid=Api&P=0&w=358&h=188" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Mphasis</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.vfuLmmKY-yjj6QLKkJ8qDwHaD3&pid=Api&P=0&w=335&h=176" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Mavenir</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.yc5Ia4y9j1MusJchdc2RiwHaE8&pid=Api&P=0&w=255&h=171" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Larsen & Toubro</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="http://www.oneindia.com/img/2015/10/12-1444628540-infosys-logo.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Infosys</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="http://3.bp.blogspot.com/-3pmUBuaIeBo/UUE-YFvmzlI/AAAAAAAARbE/OuHXxlplFHc/s1600/Birlasoft+logo.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Birlasoft</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://thingsinindia.in/wp-content/uploads/2018/11/Datamatics-Global-Services.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Datamatics</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                                Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="http://bsmedia.business-standard.com/_media/bs/img/article/2015-10/16/full/1444975382-161.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Cyient</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="http://s12.therealdeal.com/trd/up/2016/01/Screen-Shot-2016-01-19-at-10.45.19-AM-251x187.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Invesco</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="http://game-insider.com/wp-content/uploads/2014/08/amazon-smile.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Amazon</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.yEPqaRGSKedd1OifHHvKwgHaFj&pid=Api&P=0&w=248&h=187" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Allianz</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="http://media.glassdoor.com/sqll/327596/tata-technologies-squarelogo.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Tata Technologies</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>adani</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="http://motorcycle-brands.com/wp-content/uploads/2017/10/Bajaj-Logo.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Bajaj</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://cdn1.expertreviews.co.uk/sites/expertreviews/files/2020/03/bt_beyond_limits_logo.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>BT</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                                Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.ZqyGdYrM0TgIYpN9axbUYgHaEA&pid=Api&P=0&w=383&h=208" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Cipla</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://yt3.ggpht.com/-fP9Tg_L4g3w/AAAAAAAAAAI/AAAAAAAAAAA/e0Mo3MQ489g/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>FIS</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://www.dqchannels.com/wp-content/uploads/2018/05/Synechron.jpg" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Synechron</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >        
+                        <img src="https://www.photochemistry.eu/wp-content/uploads/2020/06/sn.png" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                        <h1>Springer Nature</h1>
+                    </div>
+                    <div class="inner-flex-item sub">
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+        <div class="flex-item"> 
+            <div class="inner-flex-container">
+                    <div class="inner-flex-item" id="temp"  >
+                        <img src="https://tse3.explicit.bing.net/th?id=OIP.xZJB5VgxPO484hLbyQxIswAAAA&pid=Api&P=0&w=283&h=170" alt="">
+                    </div>
+                    <div class="inner-flex-item sub">
+                            <h1>Visible alpha</h1>
+                    </div>
+                    <div class="inner-flex-item sub">         
+                    <a href="#">
+                        <button>
+                            Visit
+                        </button>
+                    </a>
+                    </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
